@@ -1,0 +1,9 @@
+<div class="container mt-5">
+<!-- Input practice -->
+<app-child [childItem]="childName"></app-child>
+<br>
+<!-- Output Practice -->
+<app-child-output (newItemEvent)="addItem($event)"></app-child-output>
+<ul>
+  <li *ngFor="let items of items11">{{items}}</li>
+</ul>
